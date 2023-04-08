@@ -26,8 +26,8 @@ function Nav() {
             
 
             </div>
-            <div className="signIn-div">
-            <h3><span className='font-icon'><FontAwesomeIcon icon="fa-solid fa-user" /></span>sign in</h3>
+            <div className="signIn-div" onClick={()=>navigate("/sign-in")}>
+            <h3><span className='font-icon'><FontAwesomeIcon icon="fa-solid fa-user" /></span >sign in</h3>
           
             </div>
            

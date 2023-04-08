@@ -1,6 +1,7 @@
 *{
     margin: 0;
 }
+/* beginnging of navbar styling */
 .news{
     color: red;
     margin-left: 7px;
@@ -63,3 +64,86 @@ ul li{
 .li{
     color: aqua;
 }
+/* end of nav styling */
+
+/* beginning of sign-in */
+.signin-div{
+    /* background-color: rgb(56, 28, 28); */
+    height: 100vh;
+    background-image: linear-gradient(to right top, #210f17, #29141c, #311921, #391e26, #42232b);
+}
+.signin-Container{
+    /* background-color: rgb(70, 34, 34); */
+    width: 500px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 5% );
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    background-image: linear-gradient(to right top, #311823, #381e28, #40232d, #472932, #4f2f37);
+    text-align: center;
+    
+}
+.logo-Signin{
+    margin-top: 30px;
+    /* margin-bottom: 10px; */
+}
+.text-Signin{
+    margin-top: 40px;
+
+}
+.p-Signin{
+    margin-top: 10px;
+    color: whitesmoke;
+}
+.email{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+input{
+    width: 90%;
+    height: 50px;
+    border-radius: 8px;
+    background: transparent;
+    border-color: rgb(216, 204, 204) ;
+    color: white;
+    font-size: 17px;
+}
+input::placeholder{
+    color: rgb(216, 204, 204);
+}
+.p2-Signin{
+    color: whitesmoke;
+    margin-top: 20px;
+    text-transform: capitalize;
+    
+    /* margin-left: ; */
+}
+.p2-Signin:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.btn{
+    margin-top: 20px;
+    width: 90%;
+    background-color: rgb(222, 58, 58);
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.signup{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* end of sign-in */
