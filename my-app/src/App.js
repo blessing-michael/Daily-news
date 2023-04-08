@@ -9,6 +9,8 @@ import Sport from "./Component/Sport"
 import SignIn from "./Component/SignIn"
 import SignUp from "./Component/SignUp"
 import ForgotPassword from './Component/ForgotPassword'
+import {ToastContainer} from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 import Footer from './Component/Footer'
 
 
@@ -32,6 +34,18 @@ function App() {
 
             </Routes>
         </Router>
+        <ToastContainer
+position="bottom-center"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+/>
     </div>
   )
 }

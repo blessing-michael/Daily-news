@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
-// import { useNavigate } from 'react-router-dom';
+import {getAuth,createUserWithEmailAndPassword, updateProfile} from "firebase/auth"
+import {db} from "../firebase"
+import { doc, serverTimestamp, setDoc } from 'firebase/firestore';
+import { useNavigate } from 'react-router-dom';
+import {toast} from "react-toastify"
 
 function SignUp() {
     // const navigate= useNavigate()
@@ -9,6 +13,7 @@ function SignUp() {
         password:"",
     })
     const {name,email,password}=info;
+    const navigate= useNavigate()
     function onChange(e){
         setInfo((prevState)=>({
             ...prevState, [e.target.id]:e.target.value
@@ -16,11 +21,38 @@ function SignUp() {
         }))
 
     }
+    async function onSubmit(e){
+        e.preventDefault()
+        try {
+            const auth =getAuth()
+            const useCredential= await createUserWithEmailAndPassword(auth,email,password)
+            updateProfile(auth.currentUser,{
+                displayName:name
+            })
+            const user=useCredential.user
+            console.log(user)
+            const infocopy ={...info}
+            delete infocopy.password
+            infocopy.timestamp=serverTimestamp();
+
+            // save to database
+            await setDoc(doc(db, "users", user.uid), infocopy)
+            
+            navigate("/")
+
+        } catch (error) {
+            toast.error("something went wrong with the registration")
+            console.log(error)
+            
+        }
+
+    }
+
   return (
 
     <div className='signin-div'>signIn
         <div className="signin-Container">
-            <form action="">
+            <form action="" onSubmit={onSubmit}>
         <div className="logo-Signin">
             <h1 style={{color:"white"}}>Daily<span className='news'>News</span></h1>
             </div>
