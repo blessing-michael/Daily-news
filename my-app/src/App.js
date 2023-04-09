@@ -12,6 +12,8 @@ import ForgotPassword from './Component/ForgotPassword'
 import {ToastContainer} from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from './Component/Footer'
+import PrivateRoute from './Pages/PrivateRoute'
+import Profile from './Component/Profile'
 
 
 function App() {
@@ -22,8 +24,15 @@ function App() {
         <Router>
         <Nav/>
             <Routes>
+
+               
               
                 <Route path='/' element={<Home/>}/>
+                
+                <Route path='/profile' element ={<PrivateRoute/>}>
+                <Route path='/profile' element={<Profile/>}/>
+
+                </Route>
                 <Route path='/business' element={<Business/>}/>
                 <Route path='/science' element={<Science/>}/>
                 <Route path='/tech' element={<Tech/>}/>
