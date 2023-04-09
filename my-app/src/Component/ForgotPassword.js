@@ -1,4 +1,6 @@
+import { getAuth, sendPasswordResetEmail } from 'firebase/auth'
 import React, { useState } from 'react'
+import { toast } from 'react-toastify'
 // import { useNavigate } from 'react-router-dom';
 
 function ForgotPassword() {
@@ -9,11 +11,24 @@ function ForgotPassword() {
       setEmail(e.target.value)
 
     }
+
+    async function onSubmit(e){
+        e.preventDefault()
+        try {
+            const auth= getAuth()
+            await sendPasswordResetEmail(auth,email)
+            toast.success("Email was sent")
+            
+        } catch (error) {
+            toast.error("Could not send reset password")
+        }
+
+    }
   return (
 
     <div className='signin-div'>signIn
         <div className="signin-Container">
-            <form action="">
+            <form action="" onSubmit={onSubmit}>
         <div className="logo-Signin">
             <h1 style={{color:"white"}}>Daily<span className='news'>News</span></h1>
             </div>
