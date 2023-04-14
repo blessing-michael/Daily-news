@@ -9,7 +9,7 @@ function PrivateRoute() {
     if(checkingStatus){
         return <div className="div">
             <Spinner/>
-            <h1>hey................</h1>
+            <h1>hey................ </h1>
 
         </div>  
 

@@ -147,3 +147,477 @@ input::placeholder{
     cursor: pointer;
 }
 /* end of sign-in */
+
+/* beginning of business page sign-in */
+.business-container{
+    background-color: whitesmoke;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+}
+.img{
+    width: 100%;
+    height: 400px;
+}
+.description{
+    margin: 50px;
+}
+.infopara{
+    /* background-color: #29141c; */
+    width: 700px;
+}
+.maincontainer{
+    background-color: white;
+    margin-top: 50px;
+    position: relative;
+    width: 700px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, .3);
+  
+}
+.img-container{
+    /* width: 700px;
+    position: absolute;
+    background: #29141c; */
+}
+.title:hover{
+    color: red;
+    cursor: pointer;
+
+}
+.title{
+    margin-left: 20px;
+}
+.country{
+    color: skyblue;
+    margin-left: 300px;
+    font-size: 20px;
+}
+.interest-container{
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+  
+}
+.interest-btn{
+    padding: 5px 30px;
+    background: transparent;
+    text-transform: capitalize;
+    border: 2px solid rgb(129, 42, 42);
+    color:  rgb(175, 37, 37);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+    
+}
+.interest-btn:hover{
+    background-color:  rgb(175, 37, 37);
+    color: white;
+}
+.read-more{
+    font-weight: bolder;
+    color: skyblue;
+    text-decoration: none;
+}
+.read-more:hover{
+    text-decoration: underline;
+}
+.read-moretech:hover{
+    text-decoration: underline;
+}
+.read-moretech{
+    font-weight: bolder;
+    color: rgb(27, 101, 130);
+    text-decoration: none;
+
+}
+.infonews-container{
+    /* background-color: bisque; */
+    height: 250px;
+    /* padding: 0 50px; */
+}
+.techimg-info{
+    /* background-color: #311921; */
+    width: 720px;
+}
+
+/* .spinner{
+    color: black;
+    height: 200px;
+    width: 200px;
+    background-color: #311921;
+} */
+/* .spinner-container{
+    background-color: black;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 40;
+} */
+/* .country-container{
+    position: absolute;
+    right: 3%;
+    bottom: 20%;
+} */
+/* end of business styles */
+
+/* home styling begins */
+.welcome{
+    /* color: rgb(32, 31, 31);
+     */
+     color:  rgb(170, 166, 166);
+     font-size:60px ;
+     text-align: center;
+     /* margin-top: 0; */
+}
+.intro-container{
+    /* background-color: whitesmoke; */
+    height: 400px;
+    /* width: 100%; */
+    margin-top: 10px;
+    position: relative;
+    padding: 50px;
+    top: 0;
+
+
+}
+.intro-Info{
+    /* margin: auto; */
+    background-color: white;
+    position: relative;
+    /* width: 100%; */
+    /* width: 90%; */
+    /* height: 90%; */
+    top: 0;
+    padding: 20px;
+    left: 2%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
+    height: 700px;
+    width: 1200px;
+  
+   
+  
+}
+
+.line-through{
+    height: 3px;
+    width: 5px;
+    background-color:  rgb(228, 224, 224);
+    width: 800px;
+    position: absolute;
+    top: 20%;
+    right:13% ;
+    border-radius: 3px;
+}
+.title{
+    color: black;
+}
+.title:hover{
+    color: red;
+}
+
+.featured-title{
+    /* font-size: 50px; */
+    text-transform: capitalize;
+    color:rgb(56, 54, 54);
+    margin-top: 40px;
+}
+.home{
+    background-color: whitesmoke;
+
+}
+.line{
+    width: 5px;
+    height: 40px;
+    background-color: red;
+}
+.Top-news{
+    margin-top: 40px;
+    /* font-size: 30px; */
+    /* margin-bottom: 20px; */
+}
+.top-title{
+    margin-right: 40px;
+    /* font-size: 18px; */
+}
+.top-h1{
+    color:rgb(56, 54, 54);
+    margin-left: 20px;
+}
+.home-news{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    /* background-color: #311921; */
+}
+.homenews-Info{
+    /* background-color: #311823; */
+    width: 310px;
+    height: 170px;
+}
+.info{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(56, 54, 54);
+}
+body{
+    background-color: whitesmoke;
+   
+}
+
+.line2{
+    width: 5px;
+    height: 25px;
+    background-color:rgb(245, 245, 6);
+    position: absolute;
+    bottom: -5%;
+
+}
+.top-h2{
+    color:rgb(56, 54, 54);
+    margin-left: 20px;
+    font-size: 23px;
+
+}
+.news2-Container{
+    /* background-color: #311921; */
+    margin-top: 160px;
+    /* width: 1300px; */
+    /* position: absolute; */
+}
+.sport-news{
+    /* background-color: aliceblue; */
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.top-title3{
+    margin-right: 40px;
+
+
+}
+.top-h3{
+    color:rgb(56, 54, 54);
+    margin-left: 20px;
+    font-size: 23px;
+
+}
+.line3{
+    width: 5px;
+    height: 25px;
+    background-color:rgb(34, 146, 54);
+    position: absolute;
+    bottom: -70%;
+
+}
+.news3-Container{
+    background-color: rgb(223, 219, 215);
+    margin-top: 100px;
+    height: 800px;
+    padding: 30px;
+    /* margin: 0 auto; */
+    /* width: 1300px; */
+    /* margin-left: 0; */
+    
+    /* padding: 50px; */
+}
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+/* TECHNOLOGY */
+.technology{
+    display: grid;
+    grid-template-columns: 4fr 1fr ;
+    /* gap: 10px; */
+    /* grid-template-rows: 1fr 1fr; */
+}
+.img-info{
+    margin-left: 20px;
+}
+.header-tech{
+    margin-top: 30px;
+}
+.startup{
+    color: black;
+    font-size: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+.startup-des{
+    color: rgb(67, 65, 65);
+    margin-bottom: 30px;
+}
+.tech-series{
+    color: rgb(222, 58, 58);
+}
+.underlne-startups{
+    width: 200px;
+    height: 5px;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.news-startup1{
+    margin-top: 230px;
+}
+
+.number{
+    font-size: 50px;
+    font-weight: bolder;
+    
+    /* background-color: red; */
+}
+.number-info{
+    font-size: 30px;
+  
+
+}
+.one{
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: red;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    margin: 20px;
+    /* margin-top: 40px; */
+
+}
+.two{
+    font-size: 30px;
+    font-weight: bolder;
+    /* background-color: red; */
+    height: 40px;
+    width: 40px;
+    /* border-radius: 50%; */
+    padding: 5px;
+    text-align: center;
+    color: black;
+    margin-left: 10px;
+    /* background-color: brown; */
+    /* font-style: italic; */
+
+}
+.table{
+    display: flex;
+    background-color: rgb(94, 90, 90);
+    padding: 30px;
+    height: 200px;
+    width: 200px;
+    /* margin-top: 100px; */
+    /* position: relative; */
+    
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+}
+.one-container{
+    /* background-color: #311823; */
+    display: flex;
+    justify-content: space-between;
+    /* box-shadow: 2px 2px 2px; */
+    height: 220px;
+    /* margin-right:150px; */
+    /* width: 20px; */
+   
+    /* width: 100%; */
+    /* position: absolute; */
+}
+.two2{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: #381e28;
+    margin-top: 0;
+    max-width: 150px;
+    height: 200px;
+    margin-left: 70px;
+    position: absolute;
+    top: 34px;
+    
+    /* margin-bottom: 50px; */
+
+}
+.technews-title{
+    margin: 20px;
+    color: black;
+}
+/* .homenews-Info{
+    background-color:  rgb(106, 102, 94);
+  
+   
+} */
+.technews-Info{
+    height: 300px;
+    border: 5px solid brown;
+    text-align: center;
+}
+table{
+    position: relative;
+}
+/* beginning of news4 container */
+.news4-Container{
+    background-color: rgb(223, 219, 215);
+    /* margin-top: 200px; */
+    height: 800px;
+    padding: 30px;
+
+    /* margin: 0 auto; */
+    /* width: 1300px; */
+    /* margin-left: 0; */
+    
+    /* padding: 50px; */
+}
+.line4{
+    width: 5px;
+    height: 25px;
+    background-color:red;
+    position: absolute;
+    bottom: -195%;
+
+}
+.top-h4{
+    color:rgb(56, 54, 54);
+    margin-left: 20px;
+    font-size: 23px;
+
+}
+.top-title4{
+    margin-right: 40px;
+
+
+}
+.nws4-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 70px;
+}
+td:hover{
+    color: #311823;
+    cursor: pointer;
+}
+.science-td{
+    height:100px ;
+    background-color:rgb(66, 65, 66);
+    margin:0 50px;
+    color: white;
+    font-size: 19px;
+    /* padding:50px */
+}
+.science-td:hover{
+    color: rgb(245, 170, 170);
+}

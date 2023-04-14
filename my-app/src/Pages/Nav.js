@@ -38,7 +38,7 @@ function Nav() {
     <div className='nav'>
         <div className="img-div">
             <div className="logo-div" onClick={()=>navigate("/")}>
-            <h1>Daily<span className='news'>News</span></h1>
+            <h1>Posh<span className='news'>News</span></h1>
             
 
             </div>
@@ -52,7 +52,7 @@ function Nav() {
         {/* <Link to="/">Home</Link>  */}
         <nav className='list-Div'>
             <ul>
-               <li onClick={()=>navigate("/home")}>Home</li>
+               <li onClick={()=>navigate("/")}>Home</li>
                <li onClick={()=>navigate("/business")}>Business</li>
                <li onClick={()=>navigate("/science")}>Science</li>
                <li onClick={()=>navigate
