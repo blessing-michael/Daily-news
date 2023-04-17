@@ -183,9 +183,10 @@ input::placeholder {
   margin-top: 50px;
   position: relative;
   width: 700px;
-  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
 }
 .img-container {
+  
   /* width: 700px;
     position: absolute;
     background: #29141c; */
@@ -369,6 +370,8 @@ input::placeholder {
 }
 body {
   background-color: whitesmoke;
+  
+
 
   /* background-color: rgb(58, 58, 162); */
   /* background-color: rgb(242, 188, 53); */
@@ -867,3 +870,28 @@ td:hover {
 } */
 
 /* } */
+/* @media only screen and (max-width:680px) {
+    .nav{
+        width: 100%;
+      
+    }
+    .signIn-div{
+       
+         visibility: hidden;
+    }
+    .img-container{
+        width: 250px;
+
+    }
+    .img{
+        width: 100%;
+        height: auto;
+    }
+    .infonews-container{
+        width: 210px;
+    }
+    .maincontainer{
+        width: 300px;
+    }
+    
+} */
